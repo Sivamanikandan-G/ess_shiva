@@ -51,3 +51,7 @@ src/
       ├── app-routing.module.ts    // Root-level routing
       ├── app.component.ts
       └── app.module.ts
+
+
+
+Generate image -> https://via.placeholder.com/300x80?text=Background
