@@ -1,0 +1,53 @@
+src/
+ └── app/
+      ├── core/                    // For global components shared across the app
+      │    ├── header/
+      │    │    ├── header.component.ts
+      │    │    ├── header.component.html
+      │    │    ├── header.component.scss
+      │    ├── footer/
+      │    │    ├── footer.component.ts
+      │    │    ├── footer.component.html
+      │    │    ├── footer.component.scss
+      │    ├── core.module.ts
+      ├── auth/                    // For authentication-related components
+      │    ├── login/
+      │    │    ├── login.component.ts
+      │    │    ├── login.component.html
+      │    │    ├── login.component.scss
+      │    └── auth.module.ts
+      ├── features/                // Feature modules, loaded after successful login
+      │    ├── profile/
+      │    │    ├── profile.component.ts
+      │    │    ├── profile.component.html
+      │    │    ├── profile.component.scss
+      │    │    ├── profile.module.ts
+      │    ├── calendar/
+      │    │    ├── calendar.component.ts
+      │    │    ├── calendar.component.html
+      │    │    ├── calendar.component.scss
+      │    │    ├── calendar.module.ts
+      │    ├── notice-board/
+      │    │    ├── notice-board.component.ts
+      │    │    ├── notice-board.component.html
+      │    │    ├── notice-board.component.scss
+      │    │    ├── notice-board.module.ts
+      │    ├── wishes/
+      │    │    ├── wishes.component.ts
+      │    │    ├── wishes.component.html
+      │    │    ├── wishes.component.scss
+      │    │    ├── wishes.module.ts
+      ├── details/                 // For details and add/edit functionality
+      │    ├── details.component.ts
+      │    ├── details.component.html
+      │    ├── details.component.scss
+      │    ├── add-edit.component.ts
+      │    ├── add-edit.component.html
+      │    ├── add-edit.component.scss
+      │    └── details.module.ts
+      ├── shared/                  // Shared services, directives, and pipes
+      │    ├── auth-guard.service.ts
+      │    ├── shared.module.ts
+      ├── app-routing.module.ts    // Root-level routing
+      ├── app.component.ts
+      └── app.module.ts
