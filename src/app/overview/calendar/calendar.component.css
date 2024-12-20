@@ -1,0 +1,29 @@
+.cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .date-item {
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .date-item:hover:not(.text-muted) {
+    background-color: #e9ecef;
+  }
+  
+  .date-item.text-muted {
+    color: #6c757d !important;
+    text-decoration: none;
+  }
+  
+  .date-item.active {
+    background-color: #007CBC;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .fw-500 {
+    font-weight: 500;
+  }
