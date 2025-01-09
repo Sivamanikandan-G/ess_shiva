@@ -1,0 +1,42 @@
+<div class="row g-3" *ngIf="birthdays.length > 0;">
+    <div class="col-md-4 d-flex" *ngFor="let data of birthdays">
+        <div class="card text-center w-100" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card-header p-0" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <img src="../../../../assets/logo/logo.png" alt="Background"
+                    class="img-fluid rounded-top" style="width: 100%; height: 80px;">
+            </div>
+            <div class="card-body py-3">
+                <img src="{{ data.image }}" alt="Profile" class="rounded-circle img-thumbnail mb-1"
+                    style="width: 80px; height: 80px; margin-top: -55px; border: 0px solid white;">
+                <h6 class="card-title mb-0">{{ data.firstName }} {{ data.lastName }}</h6>
+                <small class="text-muted mb-0">{{ data.company.title }}</small>
+            </div>
+            <div class="card-footer d-flex justify-content-between py-2">
+                <div style="font-size: 0.8em;">DOB: <small class="fw-bold">{{ data.birthDate }}</small></div>
+                <div style="font-size: 0.8em;">AGE: <small class="fw-bold">{{ data.age }}</small></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="row g-3">
+    <div class="col-md-4 d-flex" *ngFor="let data of birthdayData">
+        <div class="card text-center w-100" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="card-header p-0" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <img src="../../../../assets/logo/logo.png" alt="Background"
+                    class="img-fluid rounded-top" style="width: 100%; height: 80px;">
+            </div>
+            <div class="card-body py-3">
+                <img src="{{ data.image }}" alt="Profile" class="rounded-circle img-thumbnail mb-1"
+                    style="width: 80px; height: 80px; margin-top: -55px; border: 0px solid white;">
+                <h6 class="card-title mb-0">{{ data.firstName }} {{ data.lastName }}</h6>
+                <small class="text-muted mb-0">{{ data.company.title }}</small>
+            </div>
+            <div class="card-footer d-flex justify-content-between py-2">
+                <div style="font-size: 0.8em;">DOB: <small class="fw-bold">{{ data.birthDate }}</small></div>
+                <div style="font-size: 0.8em;">AGE: <small class="fw-bold">{{ data.age }}</small></div>
+            </div>
+        </div>
+    </div>
+</div>
